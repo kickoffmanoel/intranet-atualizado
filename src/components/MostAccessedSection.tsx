@@ -33,7 +33,7 @@ export function MostAccessedSection({ searchQuery = '' }: MostAccessedSectionPro
           <Star className="w-8 h-8 text-white fill-white" />
         </div>
         <div>
-          <h2 className="text-3xl font-bold bg-gradient-to-r from-slate-800 to-slate-600 bg-clip-text text-transparent">
+          <h2 className="text-3xl font-bold" style={{color: '#004A8D'}}>
             Mais Acessados
           </h2>
           <p className="text-slate-600 text-sm">Acesso rápido aos sistemas mais utilizados</p>

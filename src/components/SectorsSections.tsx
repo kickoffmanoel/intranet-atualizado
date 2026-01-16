@@ -112,7 +112,7 @@ export function SectorsSections({ searchQuery = '' }: SectorsSectionsProps) {
   return (
     <div className="space-y-8 animate-in fade-in slide-in-from-bottom-4 duration-700">
       <div className="text-center mb-8">
-        <h2 className="text-4xl font-bold bg-gradient-to-r from-slate-800 to-slate-600 bg-clip-text text-transparent mb-2">
+        <h2 className="text-4xl font-bold" style={{color: '#004A8D'}}>
           Sistemas por Setor
         </h2>
         <p className="text-slate-600 text-lg">Encontre facilmente o sistema que você precisa</p>

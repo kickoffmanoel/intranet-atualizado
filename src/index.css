@@ -2000,9 +2000,7 @@ html {
 .bg-app{
   position: relative;
   min-height: 100vh;
-  background: radial-gradient(1200px 700px at 20% 0%, rgba(59,130,246,0.12), transparent 60%),
-              radial-gradient(900px 600px at 100% 20%, rgba(14,165,233,0.10), transparent 55%),
-              linear-gradient(135deg, rgba(248,250,252,1) 0%, rgba(239,246,255,1) 45%, rgba(241,245,249,1) 100%);
+  background: #e2e8f0;
   overflow-x: hidden;
 }
 
@@ -2010,12 +2008,7 @@ html {
   content: "";
   position: fixed;
   inset: 0;
-  background-image: url("/city-bg.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  opacity: 0.10; /* photo opacity */
-  filter: grayscale(20%) contrast(1.05) saturate(0.9);
+  background: transparent;
   pointer-events: none;
   z-index: 0;
 }
@@ -2025,7 +2018,7 @@ html {
   content: "";
   position: fixed;
   inset: 0;
-  background: linear-gradient(135deg, rgba(248,250,252,0.75) 0%, rgba(239,246,255,0.65) 50%, rgba(241,245,249,0.80) 100%);
+  background: transparent;
   pointer-events: none;
   z-index: 0;
 }
@@ -2034,4 +2027,34 @@ html {
 .bg-app > *{
   position: relative;
   z-index: 1;
+}
+
+/* Acessibilidade - Tamanho de letra */
+:root {
+  --text-scale: 1;
+}
+
+/* Aplicar escala a todos os elementos de texto */
+html {
+  font-size: 16px;
+}
+
+body, body * {
+  font-size: calc(var(--font-size-base, 1rem) * var(--text-scale, 1)) !important;
+}
+
+/* Bordas de destaque nas páginas */
+.page-border {
+  border: 3px solid #b4b8b8;
+  border-radius: 7px;
+}
+
+/* SearchBar styling with SENAC colors */
+div.relative.group input {
+  transition: all 0.3s ease;
+}
+
+div.relative.group input:focus {
+  border-color: #F7941D !important;
+  box-shadow: 0 0 0 3px rgba(247, 148, 29, 0.1);
 }
