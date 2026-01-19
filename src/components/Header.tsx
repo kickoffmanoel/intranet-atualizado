@@ -98,7 +98,7 @@ export function Header({ isLoggedIn, onLogout, onLoginClick, onBackClick, showBa
                           }}
                           className={`block w-full text-left px-4 py-2 text-sm rounded transition-colors ${
                             textScale === scale
-                              ? 'bg-blue-600 text-white'
+                              ? 'bg-white text-slate-700 border-2 border-black font-semibold'
                               : 'text-slate-700 hover:bg-slate-100'
                           }`}
                         >
@@ -192,9 +192,9 @@ export function Header({ isLoggedIn, onLogout, onLoginClick, onBackClick, showBa
                               onTextScaleChange?.(scale);
                               setShowTextSizeMenu(false);
                             }}
-                            className={`block w-full text-left px-4 py-2 text-sm rounded transition-colors whitespace-nowrap ${
+                            className={`block w-full text-left px-4 py-2 text-sm rounded transition-colors ${
                               isSelected
-                                ? 'bg-blue-600 text-white'
+                                ? 'bg-white text-slate-700 border-2 border-black font-semibold'
                                 : 'text-slate-700 hover:bg-slate-100'
                             }`}
                           >

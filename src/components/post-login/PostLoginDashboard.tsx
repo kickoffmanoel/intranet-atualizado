@@ -322,7 +322,7 @@ export function PostLoginDashboard({ onLogout, searchQuery = '', setSearchQuery,
                         }}
                         className={`block w-full text-left px-4 py-2 text-sm rounded transition-colors whitespace-nowrap ${
                           isSelected
-                            ? 'bg-blue-600 text-white'
+                            ? `${isDarkMode ? 'bg-slate-600 text-slate-200 border-2 border-slate-400 font-semibold' : 'bg-white text-slate-700 border-2 border-black font-semibold'}`
                             : `${isDarkMode ? 'text-slate-200 hover:bg-slate-600' : 'text-slate-700 hover:bg-slate-100'}`
                         }`}
                       >

@@ -2047,6 +2047,8 @@ body, body * {
 .page-border {
   border: 3px solid #b4b8b8;
   border-radius: 7px;
+  background-color: #ffffff;
+  padding: 2rem;
 }
 
 /* SearchBar styling with SENAC colors */
